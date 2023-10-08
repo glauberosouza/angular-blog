@@ -1,15 +1,30 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-
 <app-menu-title></app-menu-title>
 <div class="container__articles">
   <div class="articles__main">
-    <app-big-card> </app-big-card>
+    <!--Chamei o photoCover do big card component por causa da anotação @input-->
+    <app-big-card
+      Id="1"
+      photoCover="https://is5-ssl.mzstatic.com/image/thumb/toO8_a7YKPIpfUgyJ7MnYg/1200x675mf.jpg"
+      cardTitle="NOVO HOMEM DE FERRO EM 3D"
+      cardCescription="Marvel anuncia novo homem de ferro."
+    >
+    </app-big-card>
   </div>
   <div class="articles__others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+      Id="2"
+      cardTitle="NOVA SERIE ANUNCIADA NO DISNEY"
+      photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2021/07/Series-Marvel-Disney-Plus-1024x576.jpg"
+    ></app-small-card>
+    <app-small-card
+      Id="3"
+      cardTitle="NOVO FILME DO DOUTOR ESTRANHO LANÇADO"
+      photoCover="https://assetsio.reedpopcdn.com/doutor-estranho-2-duracao-duas-horas.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+    ></app-small-card>
+    <app-small-card
+      Id="4"
+      cardTitle="NOVO FILME DO HOMEM ARANHA EM BREVE "
+      photoCover="https://disneyplusbrasil.com.br/wp-content/uploads/2022/06/Homem-Aranha-Sem-Volta-Para-Casa.jpg"
+    ></app-small-card>
   </div>
 </div>

@@ -1,22 +1,16 @@
 <div class="container__big-card">
   <div class="big-card__photo">
-    <img
-      src="https://is5-ssl.mzstatic.com/image/thumb/toO8_a7YKPIpfUgyJ7MnYg/1200x675mf.jpg"
-      alt=""
-      height="200px"
-      srcset=""
-    />
+    <img src="{{ photoCover }}" alt="" height="200px" srcset="" />
   </div>
   <div class="big-card__title">
-    <h1><a href="#">Saiu a nova vesão do Angular</a></h1>
+    <h1>
+      <a [routerLink]="['content', Id]">{{ cardTitle }}</a>
+    </h1>
   </div>
   <div class="big-card__description">
     <p>
-      <a href="#">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        eleifend enim quis odio commodo facilisis. Suspendisse luctus
-        sollicitudin dapibus. Duis rutrum at nunc sed lacinia. Nam arcu eros,
-        aliquam ut dictum et, pretium nec augue.
+      <a [routerLink]="['content', Id]">
+        {{ cardCescription }}
       </a>
     </p>
   </div>
